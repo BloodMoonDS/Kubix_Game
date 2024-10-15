@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://bl7747qc6scoi"]
+
+[ext_resource type="Theme" uid="uid://pht1lfi0xth8" path="res://Themes/kubix_theme.tres" id="1_0jnfd"]
+[ext_resource type="Texture2D" uid="uid://ryefoc8d5ey4" path="res://Sprites/Coins.png" id="1_o6hff"]
+[ext_resource type="Script" path="res://Prefabs/PositionDebug.gd" id="2_27p0p"]
+[ext_resource type="Script" path="res://Prefabs/VelocityDebug.gd" id="3_2kquo"]
+
+[node name="HUD" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_0jnfd")
+
+[node name="ScoreLabel" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 23.0
+text = "Score: 666"
+
+[node name="CoinsLabel" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 20.0
+offset_top = 33.0
+offset_right = 131.0
+offset_bottom = 56.0
+text = "666
+"
+
+[node name="Coins" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(8, 39)
+texture = ExtResource("1_o6hff")
+hframes = 2
+frame = 1
+
+[node name="PositionDebug" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -49.0
+offset_right = 40.0
+grow_vertical = 0
+text = "X:
+Y:
+"
+script = ExtResource("2_27p0p")
+
+[node name="VelocityDebug" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -98.0
+offset_right = 41.0
+offset_bottom = -49.0
+grow_vertical = 0
+text = "VX: 
+VY: 
+"
+script = ExtResource("3_2kquo")

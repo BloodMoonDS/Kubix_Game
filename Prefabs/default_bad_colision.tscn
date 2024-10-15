@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgijwo4ympckd"]
+
+[ext_resource type="Script" path="res://KillPlayer.gd" id="1_0h1ap"]
+[ext_resource type="Texture2D" uid="uid://dsp21omvkvmbg" path="res://Sprites/Tileset_Overworld.png" id="2_fr822"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rk3yf"]
+size = Vector2(32, 32)
+
+[node name="DefaultBadColision" type="StaticBody2D"]
+script = ExtResource("1_0h1ap")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rk3yf")
+
+[node name="TilesetOverworld" type="Sprite2D" parent="."]
+texture = ExtResource("2_fr822")
+hframes = 16
+vframes = 16
+frame = 8

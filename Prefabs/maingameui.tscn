@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf5p8q4xqb0vw"]
+
+[ext_resource type="PackedScene" uid="uid://bl7747qc6scoi" path="res://Prefabs/In-Game-HUD.tscn" id="1_ssak4"]
+
+[node name="Maingameui" type="Node"]
+
+[node name="HUD" parent="." instance=ExtResource("1_ssak4")]

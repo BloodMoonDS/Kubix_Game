@@ -1,0 +1,14 @@
+CollisionShape2D
+StaticBody2D
+Node2D
+AudioStreamPlayer2D
+AudioListener2D
+Label
+Node
+TextureRect
+Button
+Container
+VBoxContainer
+Control
+Sprite2D
+ParallaxLayer

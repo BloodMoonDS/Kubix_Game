@@ -1,6 +1,8 @@
-res://Prefabs/cube.tscn
+res://Prefabs/spikes.tscn
 res://Tilesets/Overworld.tres
-res://Scenes/Scene1.tscn
+res://Scenes/Level0001.tscn
+res://Prefabs/cube.tscn
 res://Prefabs/maingameui.tscn
 res://Prefabs/In-Game-HUD.tscn
 res://Prefabs/default_bad_colision.tscn
+res://Scenes/Scene1.tscn
